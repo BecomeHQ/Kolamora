@@ -1,0 +1,82 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+
+.custom-button {
+  font-size: 14px; /* Adjust the font size for the randomize button */
+  border: none;
+  border-radius: 5px;
+  padding: 24px; /* Adjust the padding for the randomize button */
+  color: black;
+  background: #FFD4A2;
+}
+
+.custom-button:hover {
+    color: white;
+
+  background: #321B00;
+}
+
+/* Additional styles for the Save button */
+.custom-button.save {
+  background: #4CAF50; /* Change the background color for the Save button */
+}
+
+.custom-button.save:hover {
+  background: #45a049;
+}
+
+/* From here on it's styling the sliders */
+
+
+/* Styles the whole slider */
+.mySliders{
+  width: 80px;
+  background-color: transparent;
+  
+  /* Removes some defaults */
+  -webkit-appearance: none;
+}
+
+
+/* These styles affect what happens when the cursor is focused on the slider (i.e. clicking it) */
+.mySliders:focus {
+  
+  /* Stops the default outline showing up */
+  outline: none;
+}
+
+/* This is the "track" that the slider sits on  */
+.mySliders::-webkit-slider-runnable-track {
+  background: #FFD4A2;
+  height: 4px;
+  -webkit-appearance: none;
+  
+  /* Turns the cursor into the hand pointer icon when hovering over the slider  */
+  cursor: pointer;
+  
+}
+
+/* This is the moveable bit of the slider, known as the "thumb"*/
+.mySliders::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  background: #492800;
+  cursor: pointer;
+  -webkit-appearance: none;
+  
+  /* negative top padding moves it up */
+  margin-top: -6px;
+
+  
+  /* Border radius gives rounded corners, if they're big enough, you end up with circles */
+  border-radius: 8px;
+  
+}
+
+
